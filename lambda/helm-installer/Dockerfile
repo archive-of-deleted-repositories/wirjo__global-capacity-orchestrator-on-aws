@@ -4,7 +4,7 @@
 # Lambda base image had issues with the Helm/kubectl binary entrypoint.
 # This Lambda only runs during stack deploys, so cost savings from ARM64
 # would be negligible.
-FROM public.ecr.aws/lambda/python:3.14
+FROM public.ecr.aws/lambda/python:3.15
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
